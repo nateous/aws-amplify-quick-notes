@@ -40,7 +40,7 @@ const theme = {
   },
   button: {
     borderRadius: "3px",
-    backgroundColor: "#f00",
+    backgroundColor: "#ff0",
   },
   a: {
     color: "#f00",

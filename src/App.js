@@ -16,35 +16,35 @@ const Title = styled("h1")`
 const theme = {
   formContainer: {
     margin: 0,
-    padding: "8px 24px 24px"
+    padding: "8px 24px 24px",
   },
   formSection: {
     backgroundColor: "#ffffff",
-    borderRadius: "4px"
+    borderRadius: "4px",
   },
   sectionHeader: {
-    color: "#74b49b"
+    color: "#74b49b",
   },
   sectionFooterSecondaryContent: {
-    color: "#303952"
+    color: "#303952",
   },
   inputLabel: {
-    color: "#74b49b"
+    color: "#74b49b",
   },
   input: {
     backgroundColor: "#f4f9f4",
-    color: "#74b49b"
+    color: "#74b49b",
   },
   hint: {
-    color: "#74b49b"
+    color: "#74b49b",
   },
   button: {
     borderRadius: "3px",
-    backgroundColor: "#a7d7c5"
+    backgroundColor: "#a7d7c5",
   },
   a: {
-    color: "#a7d7c5"
-  }
+    color: "#a7d7c5",
+  },
 };
 
 function App() {
@@ -52,11 +52,11 @@ function App() {
 
   const checkLoggedIn = () => {
     Auth.currentAuthenticatedUser()
-      .then(data => {
+      .then((data) => {
         const user = { username: data.username, ...data.attributes };
         setState({ isLoggedIn: true, user });
       })
-      .catch(error => console.log(error));
+      .catch((error) => console.log(error));
   };
 
   useEffect(() => {
@@ -67,9 +67,9 @@ function App() {
     <Screens />
   ) : (
     <>
-      <Title>Quick Notes</Title>
+      <Title>Nate's Quick Notes</Title>
       <Authenticator
-        onStateChange={authState => {
+        onStateChange={(authState) => {
           if (authState === "signedIn") {
             checkLoggedIn();
           }

@@ -40,10 +40,10 @@ const theme = {
   },
   button: {
     borderRadius: "3px",
-    backgroundColor: "#a7d7c5",
+    backgroundColor: "#f00",
   },
   a: {
-    color: "#a7d7c5",
+    color: "#f00",
   },
 };
 
